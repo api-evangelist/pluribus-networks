@@ -1,8 +1,26 @@
 aid: pluribus-networks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pluribus-networks.png
 name: Pluribus Networks
-description: Pluribus Networks is a company surfaced as a portfolio company of dcvc, menlo-ventures and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Pluribus Networks was a software-defined networking (SDN) and open-networking
+  vendor known for its NetVisor ONE network operating system (NVOS), the Adaptive Cloud
+  Fabric controllerless SDN fabric, the UNUM management/analytics platform, and the Freedom
+  9000 series switches. The company was acquired by Arista Networks in 2022; the
+  pluribusnetworks.com domain now redirects to Arista''s Pluribus support resources, and the
+  core Pluribus product line (NVOS, UNUM, Freedom 9000) has since been moved to End-of-Sale /
+  End-of-Life. No independent Pluribus developer portal, public REST API, OpenAPI definition,
+  or SDK is published; support and technical documentation are provided through the Arista
+  customer portal. Originally surfaced as a portfolio company of DCVC and Menlo Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/pluribus-networks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Networking
+- Software-Defined Networking
+- Open Networking
+- Data Center
+- Network Operating System
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,17 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pluribus-networks-domain-security.yml
 - type: Website
   url: https://pluribusnetworks.com
+- type: Support
+  url: https://www.arista.com/en/support/pluribus-resources
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+  notes: Acquired by Arista Networks (2022); domain redirects to Arista Pluribus resources;
+    core products (NVOS, UNUM, Freedom 9000) End-of-Sale/End-of-Life. No public API,
+    developer portal, OpenAPI, or SDK. Domain-security probed.
